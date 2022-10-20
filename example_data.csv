@@ -1,0 +1,3 @@
+"Date","Name / Description","Account","Counterparty","Code","Debit/credit","Amount (EUR)","Transaction type","Notifications"
+"20221001","Example1","NL20INGB0679269126","NL04ADYB2017400157","ID","Debit","3,03","iDEAL","Name: 1 Name Description: This is what happened IBAN: Number 1 Reference: some reference data Value date: 01/10/2022"
+"20220930","Example2","NL20INGB0679269126","NL13RABO0110077555","IC","Debit","71,78","SEPA direct debit","Name: 2 Name Description: This is what happened 2 IBAN: Number 2 Reference: some reference data Value date: 01/10/2022"

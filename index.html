@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+            integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
+            crossorigin="anonymous"></script>
+        <script src="https://d3js.org/d3.v4.js"></script>
+        <!-- <script src="https://d3js.org/d3.v2.js"></script> -->
+        <script src="https://cdn.plot.ly/plotly-2.14.0.min.js"></script>
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="style.css">
+        <title>CSV upload</title>
+    </head>
+    <body>
+        <section class="container">
+            <h1>Uploading a data set and showing a table using <a
+                href="https://developer.mozilla.org/en-US/docs/DOM/FileReader">FileReader</a>
+            and <a href="https://d3js.org/">d3</a>.</h1>
+            
+            <input type="file" id="uploader">
+            <p id="stats">
+            </p>
+            <table id="table">
+            </table>
+        </section>
+
+
+        <div id="myDiv"></div>
+        <!-- <script src='script.js'></script> -->
+        <!-- <script src='csv_load.js'></script> -->
+        <script src='plotly_bar_plot.js'></script>
+        <script src='datatable.js'></script>
+
+        <script>
+            upload_button("uploader", load_dataset);
+            upload_button("uploader", create_barplot);
+        </script>
+    </body>
+</html>
